@@ -463,3 +463,38 @@ footer p{
     }
 
 }
+
+.menu-btn{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+    color:white;
+}
+
+@media(max-width:768px){
+
+    .menu-btn{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:70px;
+        right:0;
+        width:220px;
+
+        background:#111;
+
+        display:none;
+        flex-direction:column;
+
+        padding:20px;
+        gap:15px;
+
+        border-left:1px solid #222;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+}
